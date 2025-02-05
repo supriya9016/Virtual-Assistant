@@ -85,8 +85,8 @@ function takeCommand(message){
         speak(date)
       }
     else{
-        let finalText="this is what i found on internet regarding" + message.replace("Surya","") || message.replace("Surya","")
+        let finalText="this is what i found on internet regarding" + message.replace("Veda","") || message.replace("Veda","")
         speak(finalText)
-        window.open(`https://www.google.com/search?q=${message.replace("Surya","")}`,"_blank")
+        window.open(`https://www.google.com/search?q=${message.replace("Veda","")}`,"_blank")
     }
 }
