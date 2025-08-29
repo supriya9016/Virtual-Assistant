@@ -88,12 +88,3 @@ Simply open the `index.html` file in any modern browser (Chrome recommended).
 
 **Supriya Kumari**
 A simple but powerful **browser-based Virtual Assistant project** created as part of web development learning and practice.
-
----
-
-## 📜 License
-
-This project is open-source. Feel free to modify and use for learning purposes.
-
-```
-```
