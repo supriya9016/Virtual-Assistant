@@ -1,74 +1,101 @@
- AI Mock Interviewer App
 
-An AI-powered mock interview platform built with Next.js, TailwindCSS, Firebase, Vercel AI SDK, Google Gemini, and VAPI.
-This app allows users to generate custom AI-driven interviews and practice them with a voice-enabled AI assistant.
+```markdown
+# 🧑‍💻 Veda – Virtual Assistant
 
-✨ Features :
+Veda is a simple **voice-controlled virtual assistant** built with **HTML, CSS, and JavaScript**.  
+It uses the **Web Speech API** for speech recognition and speech synthesis to interact with the user, perform basic tasks, and provide a personalized experience.
 
-📞 Voice-enabled AI Assistant powered by VAPI workflows
-🤖 Custom Interview Generation using Google Gemini AI
-⚡ Real-time AI Integration via Vercel AI SDK
-🗂️ Firestore Database to store interview data and user responses
-🎨 Modern UI styled with TailwindCSS
-🚀 Serverless API Endpoints with Next.js Route Handlers
-☁️ Deployed on Vercel for seamless scalability
+---
 
-Architecture
-flowchart TD
-  U[👤 User] -->|Initiates Call| VAPI[🎤 VAPI Voice Agent]
-  VAPI -->|Collects Responses| API[⚡ Next.js API Endpoint]
-  API -->|Feeds User Choices| GEMINI[🤖 Google Gemini AI]
-  GEMINI -->|Generates Questions| API
-  API -->|Stores Data| DB[(🔥 Firestore Database)]
-  DB -->|Dashboard & Analytics| UI[💻 Next.js + Tailwind UI]
+## ✨ Features
 
-📂 Tech Stack
+- 🎙️ **Voice Recognition** – Understands spoken commands using `SpeechRecognition`.
+- 🗣️ **Text-to-Speech** – Responds naturally with `SpeechSynthesisUtterance`.
+- 👋 **Greetings** – Greets based on the current time of the day.
+- 🌐 **Quick Access** – Opens popular websites like:
+  - YouTube  
+  - Google  
+  - Facebook  
+  - Instagram  
+  - WhatsApp (if installed)  
+  - Chrome / Calculator (if supported by system)
+- ⏰ **Date & Time** – Tells the current date and time.
+- 🔎 **Fallback Search** – Searches queries directly on Google when not recognized as a command.
 
-Frontend → Next.js, TailwindCSS
-Backend → Next.js Route Handlers
-AI Integration → Vercel AI SDK + Google Gemini
-Voice AI → VAPI Web SDK (Workflows)
-Database → Firebase Firestore
-Deployment → Vercel
+---
 
-Setup & Installation
+## 🛠️ Tech Stack
 
-1.Clone the Repository
-git clone https://github.com/your-username/ai-mock-interviewer.git
-cd ai-mock-interviewer
-2️.Install Dependencies
-npm install
-3️.Configure Environment Variables
+- **HTML5** – Structure  
+- **CSS3** – Styling  
+- **JavaScript (Vanilla)** – Functionality  
+- **Web Speech API** – Speech Recognition & Synthesis  
 
-Create a .env.local file in the root directory:
+---
 
-# Google Gemini API Key
-GOOGLE_API_KEY=your_gemini_api_key
+## 📂 Folder Structure
 
-# Firebase Config
-NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+```
 
-# VAPI Config
-VAPI_API_KEY=your_vapi_api_key
+Virtual-Assistant/
+│
+├── index.html       # Main UI
+├── style.css        # Styling
+├── script.js        # Core logic (speech recognition & responses)
+├── logo.jpg         # App logo
+├── mic.svg          # Microphone icon
+└── voice.gif        # Animation during speech recognition
 
-4️. Run the Development Server
-npm run dev
+````
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/supriya9016/Virtual-Assistant.git
+cd Virtual-Assistant
+````
+
+### 2. Run the App
+
+Simply open the `index.html` file in any modern browser (Chrome recommended).
+
+> ⚠️ Ensure microphone permissions are enabled.
+
+---
+
+## 🎤 Usage
+
+1. Open the application in your browser.
+2. Click the **mic button** to start listening.
+3. Speak commands such as:
+
+   * **"Hello"** → Assistant greets you
+   * **"Open YouTube"** → Launches YouTube
+   * **"What’s the time?"** → Tells the current time
+   * **"What’s the date?"** → Reads today’s date
+   * **"Who are you?"** → Introduces itself
+4. If the command is not predefined, Veda will **search it on Google**.
 
 
-How It Works
+## 📌 Future Enhancements
 
-User initiates a call with AI Assistant (VAPI)
-Assistant asks structured questions (frontend/backend/fullstack, tech focus, etc.)
-Responses are sent to Next.js API Endpoint
-API calls Gemini AI → generates custom interview questions
-Results are stored in Firestore
-Dashboard displays interview data for analysis & practice
+* Add more app integrations (e.g., Gmail, Maps, Weather).
+* Multi-language support.
+* Mobile-first optimization.
 
+## 👩‍💻 Author
 
+**Supriya Kumari**
+A simple but powerful **browser-based Virtual Assistant project** created as part of web development learning and practice.
 
+---
 
+## 📜 License
+
+This project is open-source. Feel free to modify and use for learning purposes.
+
+```
+```
