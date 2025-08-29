@@ -1,5 +1,3 @@
-
-```markdown
 # 🧑‍💻 Veda – Virtual Assistant
 
 Veda is a simple **voice-controlled virtual assistant** built with **HTML, CSS, and JavaScript**.  
